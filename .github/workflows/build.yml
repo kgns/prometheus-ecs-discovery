@@ -51,7 +51,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            kgns/prometheus-ecs-discovery:latest
-            kgns/prometheus-ecs-discovery:${{ github.event.inputs.release_version }}
+            kaganus/prometheus-ecs-discovery:latest
+            kaganus/prometheus-ecs-discovery:${{ github.event.inputs.release_version }}
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
